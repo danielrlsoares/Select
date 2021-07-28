@@ -1,12 +1,12 @@
-# TRABALHO DE PI:  Título do Trabalho
+# TRABALHO DE PI: Select
 Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 # Sumário
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
+Haisla Esteves Grosman: haisla.egrosman@gmail.com<br>
+Daniel Ramos Leite Soares: danielrls2003@gmail.com<br>
 ...
 
 ### 2.MINIMUNDO<br>
