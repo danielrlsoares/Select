@@ -170,58 +170,66 @@ Wireframe para web:
         
        
 ### 9	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        
-insert into associacao values
-('Associação dos Catadores de Vitória - ACVIX', 666, '(27)91234-5678', 6),
-('Associação dos Catadores de Cariacica - ACC', 333, '(27)90000-0000', 7),
-('Associação dos Catadores de Viana - ACV', 555, '(27)91928-3746', 8),
-('Associação dos Catadores de Vila Velha - ACVV', 444, '(27)99998-8876', 9),
-('Associação dos Catadores da Serra - ACSERRA', 777, '(27)98765-4321', 10);
+/* InsertsSelect: */        
+    
+    insert into associacao values
+    ('Associação dos Catadores de Vitória - ACVIX', 666, '(27)91234-5678', 6),
+    ('Associação dos Catadores de Cariacica - ACC', 333, '(27)90000-0000', 7),
+    ('Associação dos Catadores de Viana - ACV', 555, '(27)91928-3746', 8),
+    ('Associação dos Catadores de Vila Velha - ACVV', 444, '(27)99998-8876', 9),
+    ('Associação dos Catadores da Serra - ACSERRA', 777, '(27)98765-4321', 10);
 
-insert into catador values
-('João da Silva', '123.456.789-00', 1111),
-('Maria de Fátima', '987.654.321-00', 2222),
-('Pedro de Oliveira', '192.837.465-00', 3333),
-('Antônia Ramos', '918.273.465-00', 4444),
-('José Guimarães', '821.419.479-00', 5555);
+    insert into catador values
+    ('João da Silva', '123.456.789-00', 1111),
+    ('Maria de Fátima', '987.654.321-00', 2222),
+    ('Pedro de Oliveira', '192.837.465-00', 3333),
+    ('Antônia Ramos', '918.273.465-00', 4444),
+    ('José Guimarães', '821.419.479-00', 5555);
 
-insert into compoe values
-(5555, 333),
-(1111, 555),
-(3333, 444),
-(2222, 666),
-(4444, 777);
+    insert into compoe values
+    (5555, 333),
+    (1111, 555),
+    (3333, 444),
+    (2222, 666),
+    (4444, 777);
 
-insert into endereco values
-('Rua das Flores', '29090-200', 100, 1),
-('Rua das Pedras', '29150-900', 85, 2),
-('Rua das Luzes', '29640-730', 550, 3),
-('Rua dos Cachorros', '29802-206', 999, 4),
-('Rua dos Gatos', '29000-111', 4, 5),
-('Rua da Alegria', '29900-500', 150, 6),
-('Rua dos Riso', '29167-920', 3212, 7),
-('Rua da Animação', '29120-604', 412, 8),
-('Rua da Felicidade', '29234-700', 15, 9),
-('Rua das Gargalhadas', '29800-916', 3, 10);
+    insert into endereco values
+    ('Rua das Flores', '29090-200', 100, 1),
+    ('Rua das Pedras', '29150-900', 85, 2),
+    ('Rua das Luzes', '29640-730', 550, 3),
+    ('Rua dos Cachorros', '29802-206', 999, 4),
+    ('Rua dos Gatos', '29000-111', 4, 5),
+    ('Rua da Alegria', '29900-500', 150, 6),
+    ('Rua dos Riso', '29167-920', 3212, 7),
+    ('Rua da Animação', '29120-604', 412, 8),
+    ('Rua da Felicidade', '29234-700', 15, 9),
+    ('Rua das Gargalhadas', '29800-916', 3, 10);
 
-insert into retirada values
-('2021-07-30', '2021-07-30', '12:03:13', '16:02:02', 100, 1, 15, 2222, 777),
-('2021-07-26', '2021-07-25', '22:30:45.5', '07:23:20.7', 101, 3, 13, 4444, 555),
-('2021-07-29', '2021-07-29', '07:07:07.07', '09:30:00.01', 102, 1, 15, 1111, 333),
-('2021-07-10', '2021-07-10', '15:00:09.98', '17:18:19.2', 103, 4, 12, 5555, 666),
-('2021-07-01', '2021-06-30', '22:42:33', '06:46:05.11', 104, 2, 14, 3333, 444);
+    insert into retirada values
+    ('2021-07-30', '2021-07-30', '12:03:13', '16:02:02', 100, 1, 15, 2222, 777),
+    ('2021-07-26', '2021-07-25', '22:30:45.5', '07:23:20.7', 101, 3, 13, 4444, 555),
+    ('2021-07-29', '2021-07-29', '07:07:07.07', '09:30:00.01', 102, 1, 15, 1111, 333),
+    ('2021-07-10', '2021-07-10', '15:00:09.98', '17:18:19.2', 103, 4, 12, 5555, 666),
+    ('2021-07-01', '2021-06-30', '22:42:33', '06:46:05.11', 104, 2, 14, 3333, 444);
 
-insert into usuario values
-(11, 'Mário Bonela', '12345678', 'mario.bonella@gmail.com', '(27)91111-2222', 5),
-(12, 'Phelipe Lemos', 'Phelipe1990', 'phelipe.lemos@gmail.com', '(27)92222-3333', 4),
-(13, 'Rafaela Marquezine', 'minhasenha', 'rafaela.maequezine@gmail.com', '(27)93333-4444', 3),
-(14, 'Jhony Silva', 'chocolate1', 'jhony.silva@gmail.com', '(27)94444-5555', 2),
-(15, 'André Falcão', 'batata123', 'andre,falcao@gmail.com', '(27)95555-6666', 1);
+    insert into usuario values
+    (11, 'Mário Bonela', '12345678', 'mario.bonella@gmail.com', '(27)91111-2222', 5),
+    (12, 'Phelipe Lemos', 'Phelipe1990', 'phelipe.lemos@gmail.com', '(27)92222-3333', 4),
+    (13, 'Rafaela Marquezine', 'minhasenha', 'rafaela.maequezine@gmail.com', '(27)93333-4444', 3),
+    (14, 'Jhony Silva', 'chocolate1', 'jhony.silva@gmail.com', '(27)94444-5555', 2),
+    (15, 'André Falcão', 'batata123', 'andre,falcao@gmail.com', '(27)95555-6666', 1);
 
 
 ### 10	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 10.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+![SELECT * FROM associacao](https://user-images.githubusercontent.com/52607370/127855572-e115fde8-f88f-42f6-86cb-893ae7e7a2a4.png)<br>
+![SELECT * FROM catador](https://user-images.githubusercontent.com/52607370/127855744-23352d40-54c0-4cfb-8ced-74e82b654780.png)<br>
+![SELECT * FROM compoe](https://user-images.githubusercontent.com/52607370/127855937-5db5bd81-0e16-4e6e-892d-19fcfaa0e63f.png)<br>
+![SELECT * FROM endereco](https://user-images.githubusercontent.com/52607370/127855983-6e5a948f-4d62-4850-abe6-6ab13f3e2535.png)<br>
+![SELECT * FROM retirada](https://user-images.githubusercontent.com/52607370/127856098-051b12df-fbdf-4aeb-824c-2fc877cf8d99.png)<br>
+![SELECT * FROM usuario](https://user-images.githubusercontent.com/52607370/127856111-1b4a9789-92b7-4eb1-a500-1ce59d724029.png)<br>
+
+
 #### 10.2 PRINCIPAIS CONSULTAS DO SISTEMA 
  Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template.
  <br>
