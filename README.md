@@ -79,7 +79,6 @@ Wireframe para web:
 
 
 ### 8	MODELO FÍSICO<br>
-![Imagem do modelo físico Select](https://user-images.githubusercontent.com/87146767/127793782-c00765f2-f69d-48f9-b46d-721e7d023573.png)
      
      /* ModeloLogicoSelect: */
 
@@ -171,12 +170,53 @@ Wireframe para web:
         
        
 ### 9	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados 
- <br> + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+        
+insert into associacao values
+('Associação dos Catadores de Vitória - ACVIX', 666, '(27)91234-5678', 6),
+('Associação dos Catadores de Cariacica - ACC', 333, '(27)90000-0000', 7),
+('Associação dos Catadores de Viana - ACV', 555, '(27)91928-3746', 8),
+('Associação dos Catadores de Vila Velha - ACVV', 444, '(27)99998-8876', 9),
+('Associação dos Catadores da Serra - ACSERRA', 777, '(27)98765-4321', 10);
+
+insert into catador values
+('João da Silva', '123.456.789-00', 1111),
+('Maria de Fátima', '987.654.321-00', 2222),
+('Pedro de Oliveira', '192.837.465-00', 3333),
+('Antônia Ramos', '918.273.465-00', 4444),
+('José Guimarães', '821.419.479-00', 5555);
+
+insert into compoe values
+(5555, 333),
+(1111, 555),
+(3333, 444),
+(2222, 666),
+(4444, 777);
+
+insert into endereco values
+('Rua das Flores', '29090-200', 100, 1),
+('Rua das Pedras', '29150-900', 85, 2),
+('Rua das Luzes', '29640-730', 550, 3),
+('Rua dos Cachorros', '29802-206', 999, 4),
+('Rua dos Gatos', '29000-111', 4, 5),
+('Rua da Alegria', '29900-500', 150, 6),
+('Rua dos Riso', '29167-920', 3212, 7),
+('Rua da Animação', '29120-604', 412, 8),
+('Rua da Felicidade', '29234-700', 15, 9),
+('Rua das Gargalhadas', '29800-916', 3, 10);
+
+insert into retirada values
+('2021-07-30', '2021-07-30', '12:03:13', '16:02:02', 100, 1, 15, 2222, 777),
+('2021-07-26', '2021-07-25', '22:30:45.5', '07:23:20.7', 101, 3, 13, 4444, 555),
+('2021-07-29', '2021-07-29', '07:07:07.07', '09:30:00.01', 102, 1, 15, 1111, 333),
+('2021-07-10', '2021-07-10', '15:00:09.98', '17:18:19.2', 103, 4, 12, 5555, 666),
+('2021-07-01', '2021-06-30', '22:42:33', '06:46:05.11', 104, 2, 14, 3333, 444);
+
+insert into usuario values
+(11, 'Mário Bonela', '12345678', 'mario.bonella@gmail.com', '(27)91111-2222', 5),
+(12, 'Phelipe Lemos', 'Phelipe1990', 'phelipe.lemos@gmail.com', '(27)92222-3333', 4),
+(13, 'Rafaela Marquezine', 'minhasenha', 'rafaela.maequezine@gmail.com', '(27)93333-4444', 3),
+(14, 'Jhony Silva', 'chocolate1', 'jhony.silva@gmail.com', '(27)94444-5555', 2),
+(15, 'André Falcão', 'batata123', 'andre,falcao@gmail.com', '(27)95555-6666', 1);
 
 
 ### 10	TABELAS E PRINCIPAIS CONSULTAS<br>
