@@ -53,21 +53,130 @@ Wireframe para web:
       
     
 #### 6.1 Descrição dos dados 
-    [objeto]: [descrição do objeto]
+
+    RETIRADA: Tabela que armazena as informações relativas a retirada do material
+    Num_retirada: campo que armazena o número do pedido de retirada.
+    Data_Retirada: campo que armazena a data que ocorreu a retirada.
+    Data_solicitaaoo: campo que armazena a data que o usuário fez o pedido da retirada.
+    Hora_Solicitacao: campo que armazena a hora que o usuário fez o pedido da retirada
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    ASSOCIACAO: Tabela que armaena as informações referentes as associações cadastradas no app.
+    Nome_Associacao: campo que armazena o nome das associações.
+    Num_Registro_associacao: campo que armazena a identificação das associações.
+    Telefone_associacao: campo que armazena o número de telefone das associações.
+    
+    CATADOR: Tabela que armazena as informações dos catadores.
+    Matricula_Catador: campo que armazena o número de identificação de cada catador.
+    CPF_Catador: campo que armazena o cpf relativo a cada catador.
+    Nome_Catador: campo que armazena os nomes dos catadores.
+    
+    ENDERECO: Tabela que armazena os dados dos endereços de localização das associações, moradia dos catadores e usuários do aplicativo.
+    Cep: campo que armazena o cep de localização das moradias.
+    Rua: campo que armazena o nome da rua.
+    Num_endereco: campo que armazena o número da casa, apartamento ou associação.
+    Numero: campo que armazena o complemento, se houver, da moradia.
+    
+    USUARIO: Tabela que armazena os dados referentes aos usuários do aplicativo.
+    Codigo_Usuario: campo que armazena o código único identificador de cada usuáio.
+    Nome_Usuario: campo que armazena o nome do usuário.
+    Senha_Usuario: campo que armazena a senha de acesso ao app de cada usuário.
+    Login: campo que armazena o apelido que o usuário escolheu colocar como identificação.
+    Telefone_Usuario: campo que armazena o telefone dos usuários.
 
 
 ### 7	MODELO LÓGICO<br>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+      ![Imagem Modelo Lógico](https://user-images.githubusercontent.com/87146767/127793499-4858c06d-08a3-4cba-8054-6de0fa74cb99.png)
+
 
 ### 8	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+      ![Imagem do modelo físico Select](https://user-images.githubusercontent.com/87146767/127793782-c00765f2-f69d-48f9-b46d-721e7d023573.png)
+     /* ModeloLogicoSelect: */
+
+     CREATE TABLE Usuario (
+         Codigo_Usuario INTEGER PRIMARY KEY,
+         Nome_Usuario CHAR(50),
+         Senha_Usuario CHAR(15),
+         Login_Usuario CHAR(50),
+         Telefone_Usuario CHAR(15),
+         fk_Endereco_Num_Endereco INTEGER
+     );
+
+     CREATE TABLE Endereco (
+         Rua CHAR(50),
+         CEP CHAR(15),
+         Numero INTEGER,
+         Num_Endereco INTEGER PRIMARY KEY
+     );
+
+     CREATE TABLE Associacao (
+         Nome_Associacao CHAR(50),
+         Num_Registro_Associacao INTEGER PRIMARY KEY,
+         Telefone_Associacao CHAR(15),
+         fk_Endereco_Num_Endereco INTEGER
+     );
+
+     CREATE TABLE Catador (
+         Nome_Catador CHAR(50),
+         CPF_Catador CHAR(15),
+         Matricula_Catador INTEGER PRIMARY KEY
+     );
+
+     CREATE TABLE Retirada (
+         Data_Retirada DATE,
+         Data_Solicitacao DATE,
+         Hora_Solicitacao TIME,
+         Hora_Retirada TIME,
+         Num_Retirada INTEGER PRIMARY KEY,
+         fk_Endereco_Num_Endereco INTEGER,
+         fk_Usuario_Codigo_Usuario INTEGER,
+         fk_Catador_Matricula_Catador INTEGER,
+         fk_Associacao_Num_Registro_Associacao INTEGER
+     );
+
+     CREATE TABLE Compoe (
+         fk_Catador_Matricula_Catador INTEGER,
+         fk_Associacao_Num_Registro_Associacao INTEGER
+     );
+
+     ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_2
+         FOREIGN KEY (fk_Endereco_Num_Endereco)
+         REFERENCES Endereco (Num_Endereco)
+         ON DELETE SET NULL;
+
+     ALTER TABLE Associacao ADD CONSTRAINT FK_Associacao_2
+         FOREIGN KEY (fk_Endereco_Num_Endereco)
+         REFERENCES Endereco (Num_Endereco)
+         ON DELETE CASCADE;
+
+     ALTER TABLE Retirada ADD CONSTRAINT FK_Retirada_2
+         FOREIGN KEY (fk_Endereco_Num_Endereco)
+         REFERENCES Endereco (Num_Endereco)
+         ON DELETE CASCADE;
+
+     ALTER TABLE Retirada ADD CONSTRAINT FK_Retirada_3
+         FOREIGN KEY (fk_Usuario_Codigo_Usuario)
+         REFERENCES Usuario (Codigo_Usuario)
+         ON DELETE CASCADE;
+
+     ALTER TABLE Retirada ADD CONSTRAINT FK_Retirada_4
+         FOREIGN KEY (fk_Catador_Matricula_Catador)
+         REFERENCES Catador (Matricula_Catador)
+         ON DELETE CASCADE;
+
+     ALTER TABLE Retirada ADD CONSTRAINT FK_Retirada_5
+         FOREIGN KEY (fk_Associacao_Num_Registro_Associacao)
+         REFERENCES Associacao (Num_Registro_Associacao)
+         ON DELETE CASCADE;
+
+     ALTER TABLE Compoe ADD CONSTRAINT FK_Compoe_1
+         FOREIGN KEY (fk_Catador_Matricula_Catador)
+         REFERENCES Catador (Matricula_Catador)
+         ON DELETE RESTRICT;
+
+     ALTER TABLE Compoe ADD CONSTRAINT FK_Compoe_2
+         FOREIGN KEY (fk_Associacao_Num_Registro_Associacao)
+         REFERENCES Associacao (Num_Registro_Associacao)
+         ON DELETE SET NULL;
         
        
 ### 9	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
