@@ -85,6 +85,7 @@ Wireframe para web:
 
 ### 8	MODELO FÍSICO<br>
 ![Imagem do modelo físico Select](https://user-images.githubusercontent.com/87146767/127793782-c00765f2-f69d-48f9-b46d-721e7d023573.png)
+     
      /* ModeloLogicoSelect: */
 
      CREATE TABLE Usuario (
