@@ -19,6 +19,8 @@ Descrição textual das regras de negócio definidas como um subconjunto do mund
  
 
 ### 3.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+
+#### 3.1 Wireframes
 Wireframe do celular:
 [WireframeCelular.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6913615/Trabalho.1.pdf)
 
@@ -26,29 +28,22 @@ Wireframe para web:
 [WireframeWeb.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6913616/Trabalho.1.WEB.pdf)
 
 
-
-#### 3.1 Modelo conceitual
-
-> A Empresa Select precisa inicialmente dos seguintes relatórios:
-* Relatório que informe quais são os dados de cada pedido de retiradaincluindo as seguintes informações: Número da retirada, data da retirada, data da solicitação, hora da retirada e hora da solicitação.
-* Relatório das associações cadastradas incluindo as seguintes informações: Nome da associação, Número do registro da associação e telefone da associação.
-* Relatório dos catadores cadastrados no app incluindo as seguintes informações: Matricula do catador, CPF do catador e nome do catador
-* Relatório com o endereco de cada cadastrado no sistema incluindo as seguintes informações: Rua, bairro, cidade, CEP.
-* Relatório de usuário incluindo as seguintes informações: nome do usuário, código do usuário, senha do usuario, login, telefone.
-![Mapa conceitual](https://user-images.githubusercontent.com/87146767/127789514-59625ba6-b288-48c3-9232-c1592cfb29f0.png)
-
- 
-
 ### 4 TABELA DE DADOS DO SISTEMA:
 ![Modelo lógico](https://user-images.githubusercontent.com/87146767/127790663-0d8d3e84-cf19-4e2e-84da-4cdda58fde52.png)
 
+
  ### 5.PMC<br>
- ![Imagem PMC](https://user-images.githubusercontent.com/87146767/127790944-529da177-8cf5-48f6-ae87-b66ec1f58be9.png)
+![Imagem PMC](https://user-images.githubusercontent.com/87146767/127790944-529da177-8cf5-48f6-ae87-b66ec1f58be9.png)
 
  
- 
  ### 6.MODELO CONCEITUAL<br>
-   ![Imagem modelo conceitual](https://user-images.githubusercontent.com/87146767/127791075-58e3a79e-3815-4603-8326-aaebeecfc9a6.png)
+    > A Empresa Select precisa inicialmente dos seguintes relatórios:
+    * Relatório que informe quais são os dados de cada pedido de retirada incluindo as seguintes informações: Número da retirada, data da retirada, data da solicitação, hora da retirada e hora da solicitação.
+    * Relatório das associações cadastradas incluindo as seguintes informações: Nome da associação, Número do registro da associação e telefone da associação.
+    * Relatório dos catadores cadastrados no app incluindo as seguintes informações: Matricula do catador, CPF do catador e nome do catador
+    * Relatório com o endereco de cada cadastrado no sistema incluindo as seguintes informações: Rua, bairro, cidade, CEP.
+    * Relatório de usuário incluindo as seguintes informações: nome do usuário, código do usuário, senha do usuario, login, telefone.
+![Imagem modelo conceitual](https://user-images.githubusercontent.com/87146767/127791075-58e3a79e-3815-4603-8326-aaebeecfc9a6.png)
 
       
     
@@ -85,11 +80,11 @@ Wireframe para web:
 
 
 ### 7	MODELO LÓGICO<br>
-      ![Imagem Modelo Lógico](https://user-images.githubusercontent.com/87146767/127793499-4858c06d-08a3-4cba-8054-6de0fa74cb99.png)
+![Imagem Modelo Lógico](https://user-images.githubusercontent.com/87146767/127793499-4858c06d-08a3-4cba-8054-6de0fa74cb99.png)
 
 
 ### 8	MODELO FÍSICO<br>
-      ![Imagem do modelo físico Select](https://user-images.githubusercontent.com/87146767/127793782-c00765f2-f69d-48f9-b46d-721e7d023573.png)
+![Imagem do modelo físico Select](https://user-images.githubusercontent.com/87146767/127793782-c00765f2-f69d-48f9-b46d-721e7d023573.png)
      /* ModeloLogicoSelect: */
 
      CREATE TABLE Usuario (
