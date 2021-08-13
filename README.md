@@ -18,7 +18,8 @@ Wireframe do celular:
 [WireframeCelular.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6913615/Trabalho.1.pdf)
 
 Wireframe para web:
-[WireframeWeb.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6913616/Trabalho.1.WEB.pdf)
+[Wireframe Site Select.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6985512/Wireframe.Site.Select.1.pdf)
+
 
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
