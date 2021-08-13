@@ -14,21 +14,20 @@ Daniel Ramos Leite Soares: danielrls2003@gmail.com<br>
  
 
 ### 3.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-
-#### 3.1 Wireframes
 Wireframe do celular:
 [WireframeCelular.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6913615/Trabalho.1.pdf)
 
 Wireframe para web:
 [WireframeWeb.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6913616/Trabalho.1.WEB.pdf)
 
+#### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
 ### 4 TABELA DE DADOS DO SISTEMA:
 ![Modelo lógico](https://user-images.githubusercontent.com/87146767/127790663-0d8d3e84-cf19-4e2e-84da-4cdda58fde52.png)
 
 
  ### 5.PMC<br>
-![Imagem PMC](https://user-images.githubusercontent.com/87146767/127790944-529da177-8cf5-48f6-ae87-b66ec1f58be9.png)
+![Imagem PMC](https://user-images.githubusercontent.com/52607370/129369731-c0f6479b-a80b-48d6-b45f-78c4e2dce81e.png)
 
  
  ### 6.MODELO CONCEITUAL<br>
