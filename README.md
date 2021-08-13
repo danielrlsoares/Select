@@ -21,12 +21,16 @@ Wireframe para web:
 [WireframeWeb.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6913616/Trabalho.1.WEB.pdf)
 
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    > A Empresa Select precisa inicialmente dos seguintes relatórios:
-        * Relatório que informe quais são os dados de cada pedido de retirada incluindo as seguintes informações: Número da retirada, data da retirada, data da solicitação, hora da retirada e hora da solicitação.
-        * Relatório das associações cadastradas incluindo as seguintes informações: Nome da associação, Número do registro da associação e telefone da associação.
-        * Relatório dos catadores cadastrados no app incluindo as seguintes informações: Matricula do catador, CPF do catador e nome do catador
-        * Relatório com o endereco de cada cadastrado no sistema incluindo as seguintes informações: Rua, bairro, cidade, CEP.
-        * Relatório de usuário incluindo as seguintes informações: nome do usuário, código do usuário, senha do usuario, login, telefone.
+    <blockquote>
+    <p>A Empresa DevCom precisa inicialmente dos seguintes relatórios:</p>
+    </blockquote>
+    <ul>
+    <li>Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.</li>
+    <li>Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.</li>
+    <li>Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.</li>
+    <li>Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.</li>
+    <li>Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.</li>
+    </ul>
 
 ### 4 TABELA DE DADOS DO SISTEMA:
 ![Modelo lógico](https://user-images.githubusercontent.com/87146767/127790663-0d8d3e84-cf19-4e2e-84da-4cdda58fde52.png)
