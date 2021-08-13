@@ -21,16 +21,13 @@ Wireframe para web:
 [WireframeWeb.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/6913616/Trabalho.1.WEB.pdf)
 
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    <blockquote>
-    <p>A Empresa DevCom precisa inicialmente dos seguintes relatórios:</p>
-    </blockquote>
-    <ul>
-    <li>Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.</li>
-    <li>Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.</li>
-    <li>Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.</li>
-    <li>Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.</li>
-    <li>Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.</li>
-    </ul>
+
+> O Sistema Select precisa inicialmente dos seguintes relatórios:
+* Relatório que informe o tempo levado para atender às solicitações de retirada.
+* Relatório da frequência dos usuários no aplicativo (solicitando retirada de material reciclável).
+* Relatório das solicitações atendidas por cada catador.
+* Relatório da recorrência de solicitações em cada bairro.
+* Relatório das associações mais ativas no atendimento às solicitações.
 
 ### 4 TABELA DE DADOS DO SISTEMA:
 ![Modelo lógico](https://user-images.githubusercontent.com/87146767/127790663-0d8d3e84-cf19-4e2e-84da-4cdda58fde52.png)
