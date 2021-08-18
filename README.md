@@ -111,7 +111,8 @@ Wireframe para web:
      CREATE TABLE Catador (
          Nome_Catador CHAR(50),
          CPF_Catador CHAR(15),
-         Matricula_Catador INTEGER PRIMARY KEY
+         Matricula_Catador INTEGER PRIMARY KEY,
+         Status CHAR(15)
      );
 
      CREATE TABLE Retirada (
@@ -128,7 +129,8 @@ Wireframe para web:
 
      CREATE TABLE Compoe (
          fk_Catador_Matricula_Catador INTEGER,
-         fk_Associacao_Num_Registro_Associacao INTEGER
+         fk_Associacao_Num_Registro_Associacao INTEGER,
+         Data_inicio DATE
      );
 
      ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_2
