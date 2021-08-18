@@ -39,7 +39,7 @@ Wireframe para web:
 
  
  ### 6.MODELO CONCEITUAL<br>
-![Imagem modelo conceitual](https://user-images.githubusercontent.com/87146767/127791075-58e3a79e-3815-4603-8326-aaebeecfc9a6.png)
+![Imagem modelo conceitual](https://user-images.githubusercontent.com/52607370/129892450-76254aa0-66d4-48dc-b491-beb96a27f440.png)
 
       
     
@@ -76,7 +76,7 @@ Wireframe para web:
 
 
 ### 7	MODELO LÓGICO<br>
-![Imagem Modelo Lógico](https://user-images.githubusercontent.com/87146767/127793499-4858c06d-08a3-4cba-8054-6de0fa74cb99.png)
+![Imagem Modelo Lógico](https://user-images.githubusercontent.com/52607370/129892524-cc18bb5d-e1c5-4fef-a28e-066eb7e165a6.png)
 
 
 ### 8	MODELO FÍSICO<br>
