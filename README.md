@@ -231,14 +231,11 @@ Wireframe para web:
 ![SELECT * FROM usuario](https://user-images.githubusercontent.com/52607370/127856111-1b4a9789-92b7-4eb1-a500-1ce59d724029.png)<br>
 
 
-#### 10.2 PRINCIPAIS CONSULTAS DO SISTEMA 
- Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template.
- <br>
-  a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios.
- <br>
-  b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.
- <br>
- <br>
+#### 10.2 PRINCIPAIS CONSULTAS DO SISTEMA
+/* Relatório 2 */
+    select count(*) "Vezes que usou o app", ret.fk_usuario_codigo_usuario "Usuário" from retirada ret group by ret.fk_usuario_codigo_usuario;
+![image](https://user-images.githubusercontent.com/52607370/129902931-fa83703a-efe8-45e3-890f-e37d87a5f35b.png)
+
  
  ### 11 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
