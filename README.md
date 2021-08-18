@@ -242,7 +242,15 @@ Wireframe para web:
     select count(*) "Solicitações Atendidas", ret.fk_catador_matricula_catador "Catador" from retirada ret group by ret.fk_catador_matricula_catador;
 ![image](https://user-images.githubusercontent.com/52607370/129904337-7d1ed56f-9b20-4f31-89bc-bce9fafcbc04.png)
 
+/* Relatório 4 */
 
+    select count(*) "Solicitações", endco.bairro from retirada ret join endereco endco on (ret.fk_endereco_num_endereco = endco.num_endereco) group by endco.bairro;
+    
+
+/* Relatório 5 */
+    
+    select count(*) "Solicitações", ret.fk_associacao_num_registro_associacao "Associação" from retirada ret group by ret.fk_associacao_num_registro_associacao;
+![image](https://user-images.githubusercontent.com/52607370/129907102-988e735b-45b6-4532-979e-c9a9d3220cf5.png)
  
  ### 11 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
