@@ -247,7 +247,7 @@ Wireframe para web:
 /* Relatório 4 */
 
     select count(*) "Solicitações", endco.bairro from retirada ret join endereco endco on (ret.fk_endereco_num_endereco = endco.num_endereco) group by endco.bairro;
-    
+![image](https://user-images.githubusercontent.com/52607370/129920122-ac73a071-74b1-408b-967c-6c7598bd7fb3.png)    
 
 /* Relatório 5 */
     
