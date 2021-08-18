@@ -249,9 +249,9 @@ Wireframe para web:
 
 /* Relatório 5 */
     
-    select count(*) "Solicitações", ret.fk_associacao_num_registro_associacao "Associação" from retirada ret group by ret.fk_associacao_num_registro_associacao;
-![image](https://user-images.githubusercontent.com/52607370/129907102-988e735b-45b6-4532-979e-c9a9d3220cf5.png)
- 
+    select count(*) "Solicitações Administradas", ret.fk_associacao_num_registro_associacao "Associação" from retirada ret group by ret.fk_associacao_num_registro_associacao order by count(*) asc;
+![image](https://user-images.githubusercontent.com/52607370/129907696-4949bd8a-7b24-458e-861e-14c519233d16.png)
+
  ### 11 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
  #### 11.1	Integração com Linguagem de programação; <br>
