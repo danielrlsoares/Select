@@ -130,7 +130,8 @@ Wireframe para web:
      CREATE TABLE Compoe (
          fk_Catador_Matricula_Catador INTEGER,
          fk_Associacao_Num_Registro_Associacao INTEGER,
-         Data_inicio DATE
+         Data_inicio DATE,
+         Num_compoe INTEGER
      );
 
      ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_2
@@ -192,11 +193,11 @@ Wireframe para web:
     ('José Guimarães', '821.419.479-00', 5555);
 
     insert into compoe values
-    (5555, 333),
-    (1111, 555),
-    (3333, 444),
-    (2222, 666),
-    (4444, 777);
+    (5555, 333, '2010-03-30', 25),
+    (1111, 555, '2003-11-26', 24),
+    (3333, 444, '2016-02-11', 23),
+    (2222, 666, '2013-07-24', 22),
+    (4444, 777, '2020-02-29', 21);
 
     insert into endereco values
     ('Rua das Flores', '29090-200', 100, 1, 'Feu Rosa', 'Serra'),
@@ -229,7 +230,7 @@ Wireframe para web:
 #### 10.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 ![SELECT * FROM associacao](https://user-images.githubusercontent.com/52607370/127855572-e115fde8-f88f-42f6-86cb-893ae7e7a2a4.png)<br>
 ![SELECT * FROM catador](https://user-images.githubusercontent.com/52607370/127855744-23352d40-54c0-4cfb-8ced-74e82b654780.png)<br>
-![SELECT * FROM compoe](https://user-images.githubusercontent.com/52607370/127855937-5db5bd81-0e16-4e6e-892d-19fcfaa0e63f.png)<br>
+![SELECT * FROM compoe](https://user-images.githubusercontent.com/52607370/129945257-2b11c343-dd27-41a7-8c99-a139f6b08edb.png)<br>
 ![SELECT * FROM endereco](https://user-images.githubusercontent.com/52607370/129919759-f6ba6be6-031e-4ea9-8474-ba6d65b9a668.png)
 ![SELECT * FROM retirada](https://user-images.githubusercontent.com/52607370/127856098-051b12df-fbdf-4aeb-824c-2fc877cf8d99.png)<br>
 ![SELECT * FROM usuario](https://user-images.githubusercontent.com/52607370/127856111-1b4a9789-92b7-4eb1-a500-1ce59d724029.png)<br>
