@@ -8,10 +8,9 @@ Integrantes do grupo<br>
 Haisla Esteves Grosman: haisla.egrosman@gmail.com<br>
 Daniel Ramos Leite Soares: danielrls2003@gmail.com<br>
 
-### 2.MINIMUNDO<br>
-
-    O Select terá como objetivo integrar a pessoa que gostaria de fazer o descarte e o que fará a coleta de um material reciclável, haverá um local para inserir o endereço de onde será feita a busca, além de contar com um suporte para aqueles que desejam saber mais sobre as funcionalidades do aplicativo. O aplicativo contará com dicas sobre como descartar mais seguramente o material para a sua segurança e do próprio catador, e com modos de reutilização de alguns materiais, como por exemplo ensinar a fazer um vai-vem de garrafa pet, como fazer potes com esses materiais, entre outros.
- 
+### 2.MINIMUNDO
+<br>
+> O Select terá como objetivo integrar a pessoa que gostaria de fazer o descarte e o que fará a coleta de um material reciclável, haverá um local para inserir o endereço de onde será feita a busca, além de contar com um suporte para aqueles que desejam saber mais sobre as funcionalidades do aplicativo. O aplicativo contará com dicas sobre como descartar mais seguramente o material para a sua segurança e do próprio catador, e com modos de reutilização de alguns materiais, como por exemplo ensinar a fazer um vai-vem de garrafa pet, como fazer potes com esses materiais, entre outros..
 
 ### 3.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Wireframe do celular:
