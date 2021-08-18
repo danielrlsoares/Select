@@ -237,6 +237,12 @@ Wireframe para web:
     select count(*) "Vezes que usou o app", ret.fk_usuario_codigo_usuario "Usuário" from retirada ret group by ret.fk_usuario_codigo_usuario;
 ![image](https://user-images.githubusercontent.com/52607370/129902931-fa83703a-efe8-45e3-890f-e37d87a5f35b.png)
 
+/* Relatório 3 */
+
+    select count(*) "Solicitações Atendidas", ret.fk_catador_matricula_catador "Catador" from retirada ret group by ret.fk_catador_matricula_catador;
+![image](https://user-images.githubusercontent.com/52607370/129904337-7d1ed56f-9b20-4f31-89bc-bce9fafcbc04.png)
+
+
  
  ### 11 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
