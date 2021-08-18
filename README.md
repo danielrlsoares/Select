@@ -230,7 +230,7 @@ Wireframe para web:
 #### 10.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 ![SELECT * FROM associacao](https://user-images.githubusercontent.com/52607370/127855572-e115fde8-f88f-42f6-86cb-893ae7e7a2a4.png)<br>
 ![SELECT * FROM catador](https://user-images.githubusercontent.com/52607370/127855744-23352d40-54c0-4cfb-8ced-74e82b654780.png)<br>
-![SELECT * FROM compoe](https://user-images.githubusercontent.com/52607370/129945257-2b11c343-dd27-41a7-8c99-a139f6b08edb.png)<br>
+![SELECT * FROM compoe](https://user-images.githubusercontent.com/52607370/129945393-7a2b0b2d-2a36-48db-94f8-bcd49cc784f7.png)<br>
 ![SELECT * FROM endereco](https://user-images.githubusercontent.com/52607370/129919759-f6ba6be6-031e-4ea9-8474-ba6d65b9a668.png)
 ![SELECT * FROM retirada](https://user-images.githubusercontent.com/52607370/127856098-051b12df-fbdf-4aeb-824c-2fc877cf8d99.png)<br>
 ![SELECT * FROM usuario](https://user-images.githubusercontent.com/52607370/127856111-1b4a9789-92b7-4eb1-a500-1ce59d724029.png)<br>
