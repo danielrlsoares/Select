@@ -96,7 +96,9 @@ Wireframe para web:
          Rua CHAR(50),
          CEP CHAR(15),
          Numero INTEGER,
-         Num_Endereco INTEGER PRIMARY KEY
+         Num_Endereco INTEGER PRIMARY KEY,
+         Bairro CHAR(15),
+         Cidade CHAR(15)
      );
 
      CREATE TABLE Associacao (
@@ -195,16 +197,16 @@ Wireframe para web:
     (4444, 777);
 
     insert into endereco values
-    ('Rua das Flores', '29090-200', 100, 1),
-    ('Rua das Pedras', '29150-900', 85, 2),
-    ('Rua das Luzes', '29640-730', 550, 3),
-    ('Rua dos Cachorros', '29802-206', 999, 4),
-    ('Rua dos Gatos', '29000-111', 4, 5),
-    ('Rua da Alegria', '29900-500', 150, 6),
-    ('Rua dos Riso', '29167-920', 3212, 7),
-    ('Rua da Animação', '29120-604', 412, 8),
-    ('Rua da Felicidade', '29234-700', 15, 9),
-    ('Rua das Gargalhadas', '29800-916', 3, 10);
+    ('Rua das Flores', '29090-200', 100, 1, 'Feu Rosa', 'Serra'),
+    ('Rua das Pedras', '29150-900', 85, 2, 'Jardim Camburi', 'Vitória'),
+    ('Rua das Luzes', '29640-730', 550, 3, 'Cobilândia', 'Vila Velha'),
+    ('Rua dos Cachorros', '29802-206', 999, 4, 'Jardim Camburi', 'Vitória'),
+    ('Rua dos Gatos', '29000-111', 4, 5, 'Areinha', 'Viana'),
+    ('Rua da Alegria', '29900-500', 150, 6, 'Praia da Costa', 'Vila Velha'),
+    ('Rua dos Riso', '29167-920', 3212, 7, 'Praia da Costa', 'Vila Velha'),
+    ('Rua da Animação', '29120-604', 412, 8, 'Barro Vermelho', 'Vitória'),
+    ('Rua da Felicidade', '29234-700', 15, 9, 'Feu Rosa', 'Serra'),
+    ('Rua das Gargalhadas', '29800-916', 3, 10, 'Jardim Camburi', 'Vitória');
 
     insert into retirada values
     ('2021-07-30', '2021-07-30', '12:03:13', '16:02:02', 100, 1, 15, 2222, 777),
@@ -226,7 +228,7 @@ Wireframe para web:
 ![SELECT * FROM associacao](https://user-images.githubusercontent.com/52607370/127855572-e115fde8-f88f-42f6-86cb-893ae7e7a2a4.png)<br>
 ![SELECT * FROM catador](https://user-images.githubusercontent.com/52607370/127855744-23352d40-54c0-4cfb-8ced-74e82b654780.png)<br>
 ![SELECT * FROM compoe](https://user-images.githubusercontent.com/52607370/127855937-5db5bd81-0e16-4e6e-892d-19fcfaa0e63f.png)<br>
-![SELECT * FROM endereco](https://user-images.githubusercontent.com/52607370/127855983-6e5a948f-4d62-4850-abe6-6ab13f3e2535.png)<br>
+![SELECT * FROM endereco](https://user-images.githubusercontent.com/52607370/129919759-f6ba6be6-031e-4ea9-8474-ba6d65b9a668.png)
 ![SELECT * FROM retirada](https://user-images.githubusercontent.com/52607370/127856098-051b12df-fbdf-4aeb-824c-2fc877cf8d99.png)<br>
 ![SELECT * FROM usuario](https://user-images.githubusercontent.com/52607370/127856111-1b4a9789-92b7-4eb1-a500-1ce59d724029.png)<br>
 
