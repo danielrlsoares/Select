@@ -248,7 +248,7 @@ Wireframe para web:
 /* Relatório 3 */
 
     select count(*) "Solicitações Atendidas", ret.fk_catador_matricula_catador "Catador" from retirada ret group by ret.fk_catador_matricula_catador;
-![image](https://user-images.githubusercontent.com/52607370/129904337-7d1ed56f-9b20-4f31-89bc-bce9fafcbc04.png)
+![image](https://user-images.githubusercontent.com/52607370/130242021-ab4b130a-c85f-42ca-96bd-f29aa731ff20.png)
 
 /* Relatório 4 */
 
