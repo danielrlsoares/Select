@@ -235,6 +235,11 @@ Wireframe para web:
 
 
 #### 10.2 PRINCIPAIS CONSULTAS DO SISTEMA
+/* Relatório 1 */
+
+    select ret.num_retirada "Retirada", (ret.dataHora_retirada - ret.dataHora_solicitacao) "Tempo para Atendimento" from retirada ret;
+![image](https://user-images.githubusercontent.com/52607370/130239798-4db00421-ecda-473a-a454-cc6abad5cd81.png)
+
 /* Relatório 2 */
 
     select count(*) "Vezes que usou o app", ret.fk_usuario_codigo_usuario "Usuário" from retirada ret group by ret.fk_usuario_codigo_usuario;
