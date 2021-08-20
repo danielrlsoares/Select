@@ -116,10 +116,8 @@ Wireframe para web:
      );
 
      CREATE TABLE Retirada (
-         Data_Retirada DATE,
-         Data_Solicitacao DATE,
-         Hora_Solicitacao TIME,
-         Hora_Retirada TIME,
+         DataHora_Solicitacao TIMESTAMP,
+         DataHora_Retirada TIMESTAMP,
          Num_Retirada INTEGER PRIMARY KEY,
          fk_Endereco_Num_Endereco INTEGER,
          fk_Usuario_Codigo_Usuario INTEGER,
@@ -212,11 +210,11 @@ Wireframe para web:
     ('Rua das Gargalhadas', '29800-916', 3, 10, 'Jardim Camburi', 'Vitória');
 
     insert into retirada values
-    ('2021-07-30', '2021-07-30', '12:03:13', '16:02:02', 100, 1, 15, 2222, 777),
-    ('2021-07-26', '2021-07-25', '22:30:45.5', '07:23:20.7', 101, 3, 13, 4444, 555),
-    ('2021-07-29', '2021-07-29', '07:07:07.07', '09:30:00.01', 102, 1, 15, 1111, 333),
-    ('2021-07-10', '2021-07-10', '15:00:09.98', '17:18:19.2', 103, 4, 12, 5555, 666),
-    ('2021-07-01', '2021-06-30', '22:42:33', '06:46:05.11', 104, 2, 14, 3333, 444);
+    (100, 1, 15, 2222, 777, '2021-07-30 12:03:13', '2021-07-30 16:02:02'),
+    (101, 3, 13, 4444, 555, '2021-07-25 22:30:45.5', '2021-07-26 07:23:20.7'),
+    (102, 1, 15, 1111, 333, '2021-07-29 07:07:07.07', '2021-07-29 09:30:00.01'),
+    (103, 4, 12, 5555, 666, '2021-07-10 15:00:09.98', '2021-07-10 17:18:19.2'),
+    (104, 2, 14, 3333, 444, '2021-06-30 22:42:33', '2021-07-01 06:46:05.11');
 
     insert into usuario values
     (11, 'Mário Bonela', '12345678', 'mario.bonella@gmail.com', '(27)91111-2222', 5),
