@@ -94,7 +94,7 @@ Wireframe para web:
         CEP CHAR(15),
         Numero INTEGER,
         Num_Endereco INTEGER PRIMARY KEY,
-        Bairro CHAR(15),
+        Bairro CHAR(50),
         Cidade CHAR(15)
     );
 
@@ -174,18 +174,67 @@ Wireframe para web:
 /* InsertsSelect: */        
     
     insert into associacao values
-    ('Associação dos Catadores de Vitória - ACVIX', 666, '(27)91234-5678', 6),
-    ('Associação dos Catadores de Cariacica - ACC', 333, '(27)90000-0000', 7),
-    ('Associação dos Catadores de Viana - ACV', 555, '(27)91928-3746', 8),
-    ('Associação dos Catadores de Vila Velha - ACVV', 444, '(27)99998-8876', 9),
-    ('Associação dos Catadores da Serra - ACSERRA', 777, '(27)98765-4321', 10);
+    ('Associação de Catadores de João Goulart', 111, '(27) 9919-3834', 24),
+    ('Associação de Catadores de Fundão', 222, '(27) 6804-7815', 37),
+    ('Associação de Catadores de Santa Mônica Popular', 333, '(27) 6729-0176', 22),
+    ('Associação de Catadores de Pontal das Garças', 444, '(27) 2418-8890', 21),
+    ('Associação de Catadores de Porto Canoa', 555, '(27) 1224-3733', 1),
+    ('Associação de Catadores de Areinha', 666, '(27) 8464-2503', 35),
+    ('Associação de Catadores de Vila Bethânia', 777, '(27) 4497-5616', 34),
+    ('Associação de Catadores de Marcílio de Noronha', 888, '(27) 9610-9088', 32),
+    ('Associação de Catadores de Nova Bethânia', 999, '(27) 0498-2693', 31),
+    ('Associação de Catadores de Santa Cecília', 101010, '(27) 6145-8155', 30),
+    ('Associação de Catadores de Rio Branco II', 111111, '(27) 9738-6257', 28),
+    ('Associação de Catadores de Rio Branco I', 121212, '(27) 9359-8223', 27),
+    ('Associação de Catadores de Vista Mar', 131313, '(27) 8421-8839', 26),
+    ('Associação de Catadores de Itanguá', 141414, '(27) 0164-8642', 25),
+    ('Associação de Catadores de São Torquato', 151515, '(27) 6629-6666', 19),
+    ('Associação de Catadores de IBES', 161616, '(27) 2813-6427', 18),
+    ('Associação de Catadores de Barramares', 171717, '(27) 1960-0954', 17),
+    ('Associação de Catadores de Grande Vitória', 181818, '(27) 3411-5153', 16),
+    ('Associação de Catadores de Boa Vista', 191919, '(27) 3667-6538', 15),
+    ('Associação de Catadores de Tabuazeiro', 202020, '(27) 1323-1848', 14),
+    ('Associação de Catadores de Inhanguetá', 212121, '(27) 5245-6518', 13),
+    ('Associação de Catadores de Maria Ortiz', 222222, '(27) 7854-2757', 12),
+    ('Associação de Catadores de Bela Vista', 232323, '(27) 2816-5880', 11),
+    ('Associação de Catadores de Camará', 242424, '(27) 5211-9156', 7),
+    ('Associação de Catadores de Serra Centro', 252525, '(27) 3680-5799', 6),
+    ('Associação de Catadores de Enseada do Suá ', 262626, '(27) 9664-9110', 10),
+    ('Associação de Catadores de Itararé', 272727, '(27) 0919-9724', 9),
+    ('Associação de Catadores de Carapina Grande', 282828, '(27) 4726-5633', 3),
+    ('Associação de Catadores de Morada de Laranjeiras', 292929, '(27) 0152-4327', 2),
+    ('Associação de Catadores de Bom Pastor', 303030, '(27) 9748-3065', 36);
 
     insert into catador values
-    ('João da Silva', '123.456.789-00', 1111),
-    ('Maria de Fátima', '987.654.321-00', 2222),
-    ('Pedro de Oliveira', '192.837.465-00', 3333),
-    ('Antônia Ramos', '918.273.465-00', 4444),
-    ('José Guimarães', '821.419.479-00', 5555);
+    ('João da Silva', '123.456.789-00', 1111, 'Ativo'),
+    ('Maria de Fátima', '987.654.321-00', 2222, 'Inativo'),
+    ('Pedro de Oliveira', '192.837.465-00', 3333, 'Ativo'),
+    ('Antônia Ramos', '918.273.465-00', 4444, 'Ativo'),
+    ('José Guimarães', '821.419.479-00', 5555, 'Ativo'),
+    ('Rosângela Leal', '756.174.316-98', 6666, 'Ativo'),
+    ('Luis Ribeiro', '787.628.220-20', 7777, 'Inativo'),
+    ('Vitor Dias', '075.937.640-95', 8888, 'Ativo'),
+    ('José Melo', '356.894.210-06', 9999, 'Ativo'),
+    ('Mateus Dias', '618.010.930-32', 10101010, 'Ativo'),
+    ('Raissa Oliveira', '281.622.260-87', 11111111, 'Inativo'),
+    ('Gabrielly Pereira', '697.704.780-16', 12121212, 'Ativo'),
+    ('Sofia Cavalcanti', '550.947.210-38', 13131313, 'Ativo'),
+    ('Danilo Castro', '463.868.000-36', 14141414, 'Ativo'),
+    ('Vitor Araujo', '136.167.950-60', 15151515, 'Inativo'),
+    ('Gabrielle Araujo', '178.726.860-82', 16161616, 'Inativo'),
+    ('Eduarda Ferreira', '775.259.220-04', 17171717, 'Ativo'),
+    ('Luan Araujo', '140.598.280-25', 18181818, 'Ativo'),
+    ('Giovanna Sousa', '258.370.850-33', 20202020, 'Ativo'),
+    ('Rafaela Ferreira', '746.248.030-19', 21212121, 'Ativo'),
+    ('Estevan Correia', '220.858.730-81', 22222222, 'Ativo'),
+    ('João Ribeiro', '150.039.730-04', 23232323, 'Ativo'),
+    ('Clara Melo', '903.359.090-51', 24242424, 'Inativo'),
+    ('Larissa Azevedo', '646.840.260-35', 25252525, 'Ativo'),
+    ('Arthur Silva', '661.915.140-00', 26262626, 'Inativo'),
+    ('Caio Goncalves', '260.228.940-00', 27272727, 'Ativo'),
+    ('Nicolas Santos', '661.285.440-53', 28282828, 'Ativo'),
+    ('Diogo Lima', '515.169.260-72', 29292929, 'Ativo'),
+    ('João Martins', '184.878.840-16', 30303030, 'Ativo');
 
     insert into compoe values
     (5555, 333, '2010-03-30', 25),
@@ -194,31 +243,58 @@ Wireframe para web:
     (2222, 666, '2013-07-24', 22),
     (4444, 777, '2020-02-29', 21);
 
-    insert into endereco values
-    ('Rua das Flores', '29090-200', 100, 1, 'Feu Rosa', 'Serra'),
-    ('Rua das Pedras', '29150-900', 85, 2, 'Jardim Camburi', 'Vitória'),
-    ('Rua das Luzes', '29640-730', 550, 3, 'Cobilândia', 'Vila Velha'),
-    ('Rua dos Cachorros', '29802-206', 999, 4, 'Jardim Camburi', 'Vitória'),
-    ('Rua dos Gatos', '29000-111', 4, 5, 'Areinha', 'Viana'),
-    ('Rua da Alegria', '29900-500', 150, 6, 'Praia da Costa', 'Vila Velha'),
-    ('Rua dos Riso', '29167-920', 3212, 7, 'Praia da Costa', 'Vila Velha'),
-    ('Rua da Animação', '29120-604', 412, 8, 'Barro Vermelho', 'Vitória'),
-    ('Rua da Felicidade', '29234-700', 15, 9, 'Feu Rosa', 'Serra'),
-    ('Rua das Gargalhadas', '29800-916', 3, 10, 'Jardim Camburi', 'Vitória');
+    insert into endereco (cep, rua, numero, bairro, cidade, num_endereco) values
+    ('29168-400', 'Rua dos Pintassilgos', 547, 'Porto Canoa', 'Serra', 1),
+    ('29166-773', 'Rua dos Cardeais', 318, 'Morada de Laranjeiras', 'Serra', 2),
+    ('29160-110', 'Rua L', 464, 'Carapina Grande', 'Serra', 3),
+    ('29161-779', 'Rua Contagem', 333, 'Jardim Carapina', 'Serra', 4),
+    ('29164-036', 'Rua F', 501, 'Jardim Limoeiro', 'Serra', 5),
+    ('29176-022', 'Rua dos Estudantes', 801, 'Serra Centro', 'Serra', 6),
+    ('29164-261', 'Rua Felicíssimo Martins Vieira', 748, 'Camará', 'Serra', 7),
+    ('29032-416', 'Rua da Coragem', 584, 'Nova Palestina', 'Vitória', 8),
+    ('29047-654', 'Escadaria Manoel Martins Nascimento', 378, 'Itararé', 'Vitória', 9),
+    ('29050-565', 'Rua Professor Almeida Cousin', 122, 'Enseada do Suá', 'Vitória', 10),
+    ('29027-470', 'Rua São Benedito', 874, 'Bela Vista', 'Vitória', 11),
+    ('29070-290', 'Rua Aguapé', 562, 'Maria Ortiz', 'Vitória', 12),
+    ('29023-087', 'Beco Augusto Ayres Ribeiro 1', 525, 'Inhanguetá', 'Vitória', 13),
+    ('29043-408', 'Rua Maria Penha Silva', 924, 'Tabuazeiro', 'Vitória', 14),
+    ('29075-525', 'Rua Manoel Gomes Brandão', 388, 'Boa Vista', 'Vitória', 15),
+    ('29024-065', 'Rua Hordalino Militão Machado', 929, 'Grande Vitória', 'Vitória', 16),
+    ('29124-327', 'Rua Dois', 428, 'Barramares', 'Vila Velha', 17),
+    ('29108-450', 'Rua Maria Cerutti', 589, 'IBES', 'Vila Velha', 18),
+    ('29114-055', 'Rua Adolfo Amaro', 322, 'São Torquato', 'Vila Velha', 19),
+    ('29101-480', 'Rua Castelo Branco', 616, 'Praia da Costa', 'Vila Velha', 20),
+    ('29103-394', 'Rua João de Barro', 928, 'Pontal das Garças', 'Vila Velha', 21),
+    ('29105-600', 'Rua Quarenta', 687, 'Santa Mônica Popular', 'Vila Velha', 22),
+    ('29124-408', 'Rua Marte', 846, 'Barramares', 'Vila Velha', 23),
+    ('29127-072', 'Rua Bahia', 865, 'João Goulart', 'Vila Velha', 24),
+    ('29149-518', 'Rua Antônio de Oliveira Lopes', 404, 'Itanguá', 'Cariacica', 25),
+    ('29143-206', 'Avenida Fernando Antônio', 856, 'Vista Mar', 'Cariacica', 26),
+    ('29147-774', 'Rua Artistas', 495, 'Rio Branco', 'Cariacica', 27),
+    ('29147-792', 'Rua 31 de Outubro', 663, 'Rio Branco', 'Cariacica', 28),
+    ('29153-345', 'Rua Alfredo Couto Teiexeira', 430, 'Nova Canaã', 'Cariacica', 29),
+    ('29147-524', 'Rua Projetada 6', 358, 'Santa Cecília', 'Cariacica', 30),
+    ('29138-043', 'Rua Rio Japuramirim', 770, 'Nova Bethânia', 'Viana', 31),
+    ('29135-527', 'Rua Marataízes', 880, 'Marcílio de Noronha', 'Viana', 32),
+    ('29135-069', 'Rua Padre José de Anchieta', 117, 'Canaã', 'Viana', 33),
+    ('29136-132', 'Beco São João I', 166, 'Vila Bethânia', 'Viana', 34),
+    ('29137-021', 'Rua das Laranjeiras', 118, 'Areinha', 'Viana', 35),
+    ('29132-614', 'Rua Ipê', 961, 'Bom Pastor', 'Viana', 36),
+    ('29185-970', 'Rua São José 104', 871, 'Centro', 'Fundão', 37);
 
     insert into retirada values
-    (100, 1, 15, 2222, 777, '2021-07-30 12:03:13', '2021-07-30 16:02:02'),
-    (101, 3, 13, 4444, 555, '2021-07-25 22:30:45.5', '2021-07-26 07:23:20.7'),
-    (102, 1, 15, 1111, 333, '2021-07-29 07:07:07.07', '2021-07-29 09:30:00.01'),
+    (100, 5, 15, 2222, 777, '2021-07-30 12:03:13', '2021-07-30 16:02:02'),
+    (101, 8, 13, 4444, 555, '2021-07-25 22:30:45.5', '2021-07-26 07:23:20.7'),
+    (102, 5, 15, 1111, 333, '2021-07-29 07:07:07.07', '2021-07-29 09:30:00.01'),
     (103, 4, 12, 5555, 666, '2021-07-10 15:00:09.98', '2021-07-10 17:18:19.2'),
-    (104, 2, 14, 3333, 444, '2021-06-30 22:42:33', '2021-07-01 06:46:05.11');
+    (104, 29, 14, 3333, 444, '2021-06-30 22:42:33', '2021-07-01 06:46:05.11');
 
     insert into usuario values
-    (11, 'Mário Bonela', '12345678', 'mario.bonella@gmail.com', '(27)91111-2222', 5),
-    (12, 'Phelipe Lemos', 'Phelipe1990', 'phelipe.lemos@gmail.com', '(27)92222-3333', 4),
-    (13, 'Rafaela Marquezine', 'minhasenha', 'rafaela.maequezine@gmail.com', '(27)93333-4444', 3),
-    (14, 'Jhony Silva', 'chocolate1', 'jhony.silva@gmail.com', '(27)94444-5555', 2),
-    (15, 'André Falcão', 'batata123', 'andre,falcao@gmail.com', '(27)95555-6666', 1);
+    (11, 'Mário Bonela', '12345678', 'mario.bonella@gmail.com', '(27)91111-2222', 33),
+    (12, 'Phelipe Lemos', 'Phelipe1990', 'phelipe.lemos@gmail.com', '(27)92222-3333', 20),
+    (13, 'Rafaela Marquezine', 'minhasenha', 'rafaela.maequezine@gmail.com', '(27)93333-4444', 8),
+    (14, 'Jhony Silva', 'chocolate1', 'jhony.silva@gmail.com', '(27)94444-5555', 29),
+    (15, 'André Falcão', 'batata123', 'andre,falcao@gmail.com', '(27)95555-6666', 5);
 
 
 ### 10	TABELAS E PRINCIPAIS CONSULTAS<br>
