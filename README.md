@@ -129,7 +129,7 @@ Wireframe para web:
          fk_Catador_Matricula_Catador INTEGER,
          fk_Associacao_Num_Registro_Associacao INTEGER,
          Data_inicio DATE,
-         Num_compoe INTEGER
+         Num_compoe INTEGER PRIMARY KEY
      );
 
      ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_2
