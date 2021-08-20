@@ -31,7 +31,6 @@ Wireframe para web:
 * Relatório das associações mais ativas no atendimento às solicitações.
 
 ### 4 TABELA DE DADOS DO SISTEMA:
-![Modelo lógico](https://user-images.githubusercontent.com/87146767/127790663-0d8d3e84-cf19-4e2e-84da-4cdda58fde52.png)
 
 
  ### 5.PMC<br>
@@ -39,8 +38,7 @@ Wireframe para web:
 
  
  ### 6.MODELO CONCEITUAL<br>
-![Imagem modelo conceitual](https://user-images.githubusercontent.com/52607370/129892450-76254aa0-66d4-48dc-b491-beb96a27f440.png)
-
+![Select_ModeloConceitual_HaislaEsteves_DanielSoares](https://user-images.githubusercontent.com/52607370/130245711-5ebfbbd8-9400-45a3-a5f4-d1fb3d0edbda.png)
       
     
 #### 6.1 Descrição dos dados 
@@ -76,8 +74,7 @@ Wireframe para web:
 
 
 ### 7	MODELO LÓGICO<br>
-![Imagem Modelo Lógico](https://user-images.githubusercontent.com/52607370/129892524-cc18bb5d-e1c5-4fef-a28e-066eb7e165a6.png)
-
+![Select_ModeloLogico_HaislaEsteves_DanielSoares](https://user-images.githubusercontent.com/52607370/130245741-ea3edad9-7b1b-4e6f-a565-d45403d6fa5c.png)
 
 ### 8	MODELO FÍSICO<br>
      
