@@ -230,7 +230,7 @@ Wireframe para web:
 ![SELECT * FROM catador](https://user-images.githubusercontent.com/52607370/129948009-997b67d0-89a5-44be-8c18-c450dc91c0a4.png)<br>
 ![SELECT * FROM compoe](https://user-images.githubusercontent.com/52607370/129945393-7a2b0b2d-2a36-48db-94f8-bcd49cc784f7.png)<br>
 ![SELECT * FROM endereco](https://user-images.githubusercontent.com/52607370/129919759-f6ba6be6-031e-4ea9-8474-ba6d65b9a668.png)
-![SELECT * FROM retirada](https://user-images.githubusercontent.com/52607370/127856098-051b12df-fbdf-4aeb-824c-2fc877cf8d99.png)<br>
+![SELECT * FROM retirada](https://user-images.githubusercontent.com/52607370/130239169-9b88e324-c802-4e9b-b3df-7f75ef555618.png)<br>
 ![SELECT * FROM usuario](https://user-images.githubusercontent.com/52607370/127856111-1b4a9789-92b7-4eb1-a500-1ce59d724029.png)<br>
 
 
