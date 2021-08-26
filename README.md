@@ -303,39 +303,63 @@ Wireframe para web:
 
 
 #### 10.2 PRINCIPAIS CONSULTAS DO SISTEMA
-/* Relatório 1 */
+  /* Relatório 1 */
 
     select ret.num_retirada "Retirada", (ret.dataHora_retirada - ret.dataHora_solicitacao) "Tempo para Atendimento" from retirada ret;
 ![image](https://user-images.githubusercontent.com/52607370/130239798-4db00421-ecda-473a-a454-cc6abad5cd81.png)
 
-/* Relatório 2 */
+  /* Relatório 2 */
 
     select count(*) "Vezes que usou o app", ret.fk_usuario_codigo_usuario "Usuário" from retirada ret group by ret.fk_usuario_codigo_usuario;
 ![image](https://user-images.githubusercontent.com/52607370/129902931-fa83703a-efe8-45e3-890f-e37d87a5f35b.png)
 
-/* Relatório 3 */
+  /* Relatório 3 */
 
     select count(*) "Solicitações Atendidas", ret.fk_catador_matricula_catador "Catador" from retirada ret group by ret.fk_catador_matricula_catador;
 ![image](https://user-images.githubusercontent.com/52607370/130242021-ab4b130a-c85f-42ca-96bd-f29aa731ff20.png)
 
-/* Relatório 4 */
+  /* Relatório 4 */
 
     select count(*) "Solicitações", endco.bairro from retirada ret join endereco endco on (ret.fk_endereco_num_endereco = endco.num_endereco) group by endco.bairro;
 ![image](https://user-images.githubusercontent.com/52607370/129920122-ac73a071-74b1-408b-967c-6c7598bd7fb3.png)    
 
-/* Relatório 5 */
+  /* Relatório 5 */
     
     select count(*) "Solicitações Administradas", ret.fk_associacao_num_registro_associacao "Associação" from retirada ret group by ret.fk_associacao_num_registro_associacao order by count(*) asc;
 ![image](https://user-images.githubusercontent.com/52607370/129907696-4949bd8a-7b24-458e-861e-14c519233d16.png)
 
  ### 11 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
-     OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
- #### 11.1	Integração com Linguagem de programação; <br>
- #### 11.2	Desenvolvimento de gráficos/relatórios pertinentes, juntamente com demais <br>
- #### solicitações feitas pelo professor. <br>
- <br>
- <br>
  
+ #### 11.1	Integração com Linguagem de programação; <br>
+      Instalando as bibliotecas
+![InstalandoBibliotecas](https://user-images.githubusercontent.com/87146767/131040521-51a4d494-2626-4f81-ada2-87fdc0489e19.png)
+      
+      Importando as bibliotecas
+![ImportandoBibliotecas](https://user-images.githubusercontent.com/87146767/131040593-75b1184d-7993-4b20-888a-53ac7b6a8e70.png)
+      
+      Conectando ao banco de dados
+![ConectandoBD](https://user-images.githubusercontent.com/87146767/131040628-76497a4b-6506-4d49-a4c5-27ef1984ec17.png)
+
+
+
+ #### 11.2	Desenvolvimento de gráficos/relatórios pertinentes, juntamente com demais <br>
+      RELATÓRIO 1
+![image](https://user-images.githubusercontent.com/87146767/131040945-91f52153-4c57-415a-b5af-4f1a03832aef.png)
+![image](https://user-images.githubusercontent.com/87146767/131041244-9c5da75d-0009-4895-9757-3ea13b13a400.png)
+      
+      RELATÓRIO 2
+![image](https://user-images.githubusercontent.com/87146767/131041359-082eec52-7a05-4dfd-8088-8a1c7d693018.png)
+      
+      RELATÓRIO 3
+![image](https://user-images.githubusercontent.com/87146767/131041390-9ec7329d-5e89-4a26-98d9-6e9fa55c59b6.png)
+      
+      RELATÓRIO 4
+![image](https://user-images.githubusercontent.com/87146767/131041436-7d8728ac-abef-408e-baee-cd21aa6c72d8.png)
+      
+      RELATÓRIO 5
+![image](https://user-images.githubusercontent.com/87146767/131041470-cb6a72c2-5406-4d76-895c-515d7c1f81ba.png)
+
+
  ### 12 Slides e Apresentação em vídeo. <br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
  #### 12.1 Slides; <br>
