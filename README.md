@@ -198,16 +198,36 @@ Wireframe para web:
     ('Mateus Dias', '618.010.930-32', 10101010, 'Ativo');
 
     insert into compoe values
-    (18181818, 333, '2010-03-30', 25),
-    (7777, 202020, '2003-11-26', 24),
-    (27272727, 131313, '2016-02-11', 23),
-    (2222, 666, '2013-07-24', 22),
-    (18181818, 777, '2020-02-29', 21),
-    (15151515, 303030, '1998-08-15', 20),
-    (16161616, 181818, '2000-11-30', 19),
-    (24242424, 101010, '2008-03-04', 18),
-    (26262626, 282828, '2001-09-11', 17),
-    (11111111, 111111, '1995-12-25', 16);
+    (10101010, 333, '2018-03-30', 30),
+    (2222, 222, '2010-03-30', 29),
+    (6666, 111, '2020-12-02', 28),
+    (3333, 444, '2017-10-10', 27),
+    (5555, 555, '2019-04-09', 26),
+    (8888, 666, '2018-06-23', 25),
+    (4444, 777, '2016-10-31', 24),
+    (1111, 888, '2017-02-27', 23),
+    (2222, 999, '2020-07-15', 22),
+    (7777, 101010, '2012-11-26', 21),
+    (4444, 333, '2021-04-05', 20),
+    (2222, 444, '2008-03-30', 19),
+    (2222, 222, '2006-03-30', 18),
+    (1111, 555, '2021-08-25', 17),
+    (10101010, 111, '2021-05-01', 16),
+    (6666, 999, '2021-08-18', 15),
+    (8888, 666, '2020-07-16', 14),
+    (5555, 888, '2021-08-24', 13),
+    (8888, 777, '2018-02-02', 12),
+    (7777, 101010, '2001-09-11', 11),
+    (4444, 111, '2019-11-20', 10),
+    (9999, 222, '2015-12-25', 9),
+    (10101010, 333, '2021-06-18', 8),
+    (2222, 444, '2021-02-23', 7),
+    (7777, 555, '2008-05-13', 6),
+    (5555, 666, '2021-03-01', 5),
+    (8888, 777, '2020-01-10', 4),
+    (2222, 888, '2019-05-17', 3),
+    (1111, 999, '2019-05-18', 2),
+    (6666, 101010, '2020-12-20', 1);
 
     insert into endereco (cep, rua, numero, bairro, cidade, num_endereco) values
     ('29168-400', 'Rua dos Pintassilgos', 547, 'Porto Canoa', 'Serra', 1),
@@ -316,24 +336,6 @@ Wireframe para web:
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
  #### 12.1 Slides; <br>
  #### 12.2 Apresentação em vídeo <br>
- <br>
- <br>   
-
-
-    
-##### About Formatting
-    https://help.github.com/articles/about-writing-and-formatting-on-github/
-    
-##### Basic Formatting in Git
-    
-    https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests
-   
-    
-##### Working with advanced formatting
-    https://help.github.com/articles/working-with-advanced-formatting/
-
-#### Mastering Markdown
-    https://guides.github.com/features/mastering-markdown/
 
 ### OBSERVAÇÕES IMPORTANTES
 
@@ -343,12 +345,3 @@ Wireframe para web:
 #### Todos os grupos deverão fazer Fork deste repositório e dar permissões administrativas ao usuário deste GIT, para acompanhamento do trabalho.
 
 #### Os usuários criados no GIT devem possuir o nome de identificação do aluno (não serão aceitos nomes como Eu123, meuprojeto, pro456, etc). Em caso de dúvida comunicar o professor.
-
-
-Link para BrModelo:<br>
-http://sis4.com/brModelo/brModelo/download.html
-<br>
-
-
-Link para curso de GIT<br>
-![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
