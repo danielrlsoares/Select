@@ -183,27 +183,7 @@ Wireframe para web:
     ('Associação de Catadores de Vila Bethânia', 777, '(27) 4497-5616', 34),
     ('Associação de Catadores de Marcílio de Noronha', 888, '(27) 9610-9088', 32),
     ('Associação de Catadores de Nova Bethânia', 999, '(27) 0498-2693', 31),
-    ('Associação de Catadores de Santa Cecília', 101010, '(27) 6145-8155', 30),
-    ('Associação de Catadores de Rio Branco II', 111111, '(27) 9738-6257', 28),
-    ('Associação de Catadores de Rio Branco I', 121212, '(27) 9359-8223', 27),
-    ('Associação de Catadores de Vista Mar', 131313, '(27) 8421-8839', 26),
-    ('Associação de Catadores de Itanguá', 141414, '(27) 0164-8642', 25),
-    ('Associação de Catadores de São Torquato', 151515, '(27) 6629-6666', 19),
-    ('Associação de Catadores de IBES', 161616, '(27) 2813-6427', 18),
-    ('Associação de Catadores de Barramares', 171717, '(27) 1960-0954', 17),
-    ('Associação de Catadores de Grande Vitória', 181818, '(27) 3411-5153', 16),
-    ('Associação de Catadores de Boa Vista', 191919, '(27) 3667-6538', 15),
-    ('Associação de Catadores de Tabuazeiro', 202020, '(27) 1323-1848', 14),
-    ('Associação de Catadores de Inhanguetá', 212121, '(27) 5245-6518', 13),
-    ('Associação de Catadores de Maria Ortiz', 222222, '(27) 7854-2757', 12),
-    ('Associação de Catadores de Bela Vista', 232323, '(27) 2816-5880', 11),
-    ('Associação de Catadores de Camará', 242424, '(27) 5211-9156', 7),
-    ('Associação de Catadores de Serra Centro', 252525, '(27) 3680-5799', 6),
-    ('Associação de Catadores de Enseada do Suá ', 262626, '(27) 9664-9110', 10),
-    ('Associação de Catadores de Itararé', 272727, '(27) 0919-9724', 9),
-    ('Associação de Catadores de Carapina Grande', 282828, '(27) 4726-5633', 3),
-    ('Associação de Catadores de Morada de Laranjeiras', 292929, '(27) 0152-4327', 2),
-    ('Associação de Catadores de Bom Pastor', 303030, '(27) 9748-3065', 36);
+    ('Associação de Catadores de Santa Cecília', 101010, '(27) 6145-8155', 30);
 
     insert into catador values
     ('João da Silva', '123.456.789-00', 1111, 'Ativo'),
@@ -215,27 +195,7 @@ Wireframe para web:
     ('Luis Ribeiro', '787.628.220-20', 7777, 'Inativo'),
     ('Vitor Dias', '075.937.640-95', 8888, 'Ativo'),
     ('José Melo', '356.894.210-06', 9999, 'Ativo'),
-    ('Mateus Dias', '618.010.930-32', 10101010, 'Ativo'),
-    ('Raissa Oliveira', '281.622.260-87', 11111111, 'Inativo'),
-    ('Gabrielly Pereira', '697.704.780-16', 12121212, 'Ativo'),
-    ('Sofia Cavalcanti', '550.947.210-38', 13131313, 'Ativo'),
-    ('Danilo Castro', '463.868.000-36', 14141414, 'Ativo'),
-    ('Vitor Araujo', '136.167.950-60', 15151515, 'Inativo'),
-    ('Gabrielle Araujo', '178.726.860-82', 16161616, 'Inativo'),
-    ('Eduarda Ferreira', '775.259.220-04', 17171717, 'Ativo'),
-    ('Luan Araujo', '140.598.280-25', 18181818, 'Ativo'),
-    ('Daniel Oliveira', '826.987.590-23', 19191919, 'Ativo'),
-    ('Giovanna Sousa', '258.370.850-33', 20202020, 'Ativo'),
-    ('Rafaela Ferreira', '746.248.030-19', 21212121, 'Ativo'),
-    ('Estevan Correia', '220.858.730-81', 22222222, 'Ativo'),
-    ('João Ribeiro', '150.039.730-04', 23232323, 'Ativo'),
-    ('Clara Melo', '903.359.090-51', 24242424, 'Inativo'),
-    ('Larissa Azevedo', '646.840.260-35', 25252525, 'Ativo'),
-    ('Arthur Silva', '661.915.140-00', 26262626, 'Inativo'),
-    ('Caio Goncalves', '260.228.940-00', 27272727, 'Ativo'),
-    ('Nicolas Santos', '661.285.440-53', 28282828, 'Ativo'),
-    ('Diogo Lima', '515.169.260-72', 29292929, 'Ativo'),
-    ('João Martins', '184.878.840-16', 30303030, 'Ativo');
+    ('Mateus Dias', '618.010.930-32', 10101010, 'Ativo');
 
     insert into compoe values
     (18181818, 333, '2010-03-30', 25),
@@ -295,12 +255,17 @@ Wireframe para web:
     (103, 4, 12, 5555, 666, '2021-07-10 15:00:09.98', '2021-07-10 17:18:19.2'),
     (104, 29, 14, 3333, 444, '2021-06-30 22:42:33', '2021-07-01 06:46:05.11');
 
-    insert into usuario values
-    (11, 'Mário Bonela', '12345678', 'mario.bonella@gmail.com', '(27)91111-2222', 33),
-    (12, 'Phelipe Lemos', 'Phelipe1990', 'phelipe.lemos@gmail.com', '(27)92222-3333', 20),
-    (13, 'Rafaela Marquezine', 'minhasenha', 'rafaela.maequezine@gmail.com', '(27)93333-4444', 8),
-    (14, 'Jhony Silva', 'chocolate1', 'jhony.silva@gmail.com', '(27)94444-5555', 29),
-    (15, 'André Falcão', 'batata123', 'andre,falcao@gmail.com', '(27)95555-6666', 5);
+    insert into usuario (codigo_usuario, nome_usuario, login_usuario, senha_usuario, telefone_usuario, fk_endereco_num_endereco) values
+    (11, 'Emanuelly Giovanna Isabel Bernardes', 'emanuellybernardes@portalpublicidade.com.br', 'NKTQb7wrim', '(27) 98807-1692', 33),
+    (12, 'Vanessa Carolina Yasmin Cavalcanti', 'vanessacarolinayasmincavalcanti-84@bighost.com.br', 'B5pgmZqQaD', '(27) 98731-3590', 20),
+    (13, 'José Enrico Ribeiro', 'joseenricoribeiro@golinelli.eti.br', 'njCH9YP7Wy', '(27) 99813-1216', 8),
+    (14, 'Amanda Natália Aragão', 'amandaaragao_@ecotransambiental.com.br', 'uDHXKlCZEF', '(27) 98283-5752', 29),
+    (15, 'Theo Kaique das Neves', 'theokaiquedasneves_@athos.srv.br', 'P2tcfWL3jK', '(27) 99862-6115', 5),
+    (16, 'Luan Enrico Henrique Barbosa', 'luanenricohenriquebarbosa@gruposeteestrelas.com.br', '8BjxppNf3J', '(27) 98712-8907', 18),
+    (17, 'Gabrielly Eliane Eduarda Vieira', 'gabriellyelianeeduardavieira_@raninho.com.br', 'p0fbEfFPid', '(27) 98119-1677', 6), 
+    (18, 'Luzia Lúcia Mariana Martins', 'luzialuciamarianamartins_@emcinfo.com.br', 'z6aBL5WGMd', '(27) 98718-3778', 15),
+    (19, 'Isabella Mirella Sandra dos Santos', 'isabellasantos@grupoarteoficio.com.br', 'gFg0eSBrCn', '(27) 98538-4545', 10),
+    (20, 'Nair Sophia Figueiredo', 'nairsophiafigueiredo-76@vhbadvogados.com.br', 'XZC45lB1qo', '(27) 99335-2188', 2);
 
 
 ### 10	TABELAS E PRINCIPAIS CONSULTAS<br>
