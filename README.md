@@ -362,10 +362,11 @@ Wireframe para web:
 
  ### 12 Slides e Apresentação em vídeo. <br>
  #### 12.1 Slides; <br>
-[ https://docs.google.com/presentation/d/1EDangomr-g1cXU_wcaxxCLZMFavxPfQrbsi2a60mS6Y/edit?usp=sharing
+Link para slides no Google Slides: [ https://docs.google.com/presentation/d/1EDangomr-g1cXU_wcaxxCLZMFavxPfQrbsi2a60mS6Y/edit?usp=sharing
 ](url) 
-[DanielSoares_HaislaEsteves_PechaKucha.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/7071051/DanielSoares_HaislaEsteves_PechaKucha.pdf)
-[DanielSoares_HaislaEsteves_PechaKucha.pptx](https://github.com/HaislaEG/template_projeto_integrador/files/7071052/DanielSoares_HaislaEsteves_PechaKucha.pptx)
+Arquivo PDF: [DanielSoares_HaislaEsteves_PechaKucha.pdf](https://github.com/HaislaEG/template_projeto_integrador/files/7071051/DanielSoares_HaislaEsteves_PechaKucha.pdf)
+
+Arquivo PPTX: [DanielSoares_HaislaEsteves_PechaKucha.pptx](https://github.com/HaislaEG/template_projeto_integrador/files/7071052/DanielSoares_HaislaEsteves_PechaKucha.pptx)
 
  #### 12.2 Apresentação em vídeo <br>
 
