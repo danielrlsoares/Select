@@ -79,94 +79,170 @@ Wireframe para web:
      
          /* ModeloLogicoSelect: */
 
-    CREATE TABLE Usuario (
-        Codigo_Usuario INTEGER PRIMARY KEY,
-        Nome_Usuario VARCHAR(50),
-        Senha_Usuario CHAR(15),
-        Login_Usuario VARCHAR(50),
-        Telefone_Usuario CHAR(15),
-        fk_Endereco_Num_Endereco INTEGER
+    BEGIN;
+
+
+    CREATE TABLE IF NOT EXISTS public.associacao
+    (
+        email_associacao character(255) COLLATE pg_catalog."default" NOT NULL,
+        telefone_associacao character(14) COLLATE pg_catalog."default",
+        nome_associacao character(255) COLLATE pg_catalog."default",
+        senha_associacao character(32) COLLATE pg_catalog."default",
+        endereco_cod_endereco integer,
+        CONSTRAINT associacao_pkey PRIMARY KEY (email_associacao)
     );
 
-    CREATE TABLE Endereco (
-        Rua VARCHAR(50),
-        CEP CHAR(15),
-        Numero INTEGER,
-        Num_Endereco INTEGER PRIMARY KEY,
-        Bairro CHAR(50),
-        Cidade CHAR(15)
+    CREATE TABLE IF NOT EXISTS public.catador
+    (
+        cod_catador integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+        nome_catador character(255) COLLATE pg_catalog."default",
+        dat_nasc_catador date,
+        cpf_catador character(14) COLLATE pg_catalog."default",
+        email_catador character(255) COLLATE pg_catalog."default",
+        telefone_catador character(14) COLLATE pg_catalog."default",
+        associacao_email_associacao character(255) COLLATE pg_catalog."default",
+        CONSTRAINT catador_pkey PRIMARY KEY (cod_catador)
     );
 
-    CREATE TABLE Associacao (
-        Nome_Associacao VARCHAR(50),
-        Num_Registro_Associacao INTEGER PRIMARY KEY,
-        Telefone_Associacao CHAR(15),
-        fk_Endereco_Num_Endereco INTEGER
+    CREATE TABLE IF NOT EXISTS public.endereco
+    (
+        cod_endereco integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+        rua character(255) COLLATE pg_catalog."default",
+        cep character(9) COLLATE pg_catalog."default",
+        bairro character(255) COLLATE pg_catalog."default",
+        referencia character(255) COLLATE pg_catalog."default",
+        uf character(2) COLLATE pg_catalog."default",
+        cidade character(255) COLLATE pg_catalog."default",
+        numero character(15) COLLATE pg_catalog."default",
+        complemento character(15) COLLATE pg_catalog."default",
+        CONSTRAINT endereco_pkey PRIMARY KEY (cod_endereco)
     );
 
-    CREATE TABLE Catador (
-        Nome_Catador VARCHAR(50),
-        CPF_Catador CHAR(15),
-        Matricula_Catador INTEGER PRIMARY KEY,
-        Status CHAR(15)
+    CREATE TABLE IF NOT EXISTS public.realiza_retirada
+    (
+        retirada_cod_solicitacao integer NOT NULL DEFAULT nextval('realiza_retirada_retirada_cod_solicitacao_seq'::regclass),
+        catador_cod_catador integer NOT NULL,
+        data_hora_retirada timestamp without time zone
     );
 
-    CREATE TABLE Retirada (
-        DataHora_Retirada TIMESTAMP,
-        DataHora_Solicitacao TIMESTAMP,
-        Num_Retirada INTEGER PRIMARY KEY,
-        fk_Endereco_Num_Endereco INTEGER,
-        fk_Usuario_Codigo_Usuario INTEGER,
-        fk_Catador_Matricula_Catador INTEGER,
-        fk_Associacao_Num_Registro_Associacao INTEGER
+    CREATE TABLE IF NOT EXISTS public.retirada
+    (
+        data_hora_solicitacao timestamp without time zone,
+        foto_local text COLLATE pg_catalog."default",
+        cod_solicitacao integer NOT NULL DEFAULT nextval('retirada_cod_solicitacao_seq'::regclass),
+        endereco_cod_endereco integer,
+        material character(100) COLLATE pg_catalog."default",
+        usuario_email_usuario character(255) COLLATE pg_catalog."default",
+        CONSTRAINT retirada_pkey PRIMARY KEY (cod_solicitacao)
     );
 
-    CREATE TABLE Compoe (
-        fk_Catador_Matricula_Catador INTEGER,
-        fk_Associacao_Num_Registro_Associacao INTEGER,
-        Data_inicio DATE,
-        Num_compoe INTEGER PRIMARY KEY
+    CREATE TABLE IF NOT EXISTS public.usuario
+    (
+        email_usuario character(255) COLLATE pg_catalog."default" NOT NULL,
+        nome_usuario character(255) COLLATE pg_catalog."default",
+        dat_nasc_usuario date,
+        cpf_usuario character(14) COLLATE pg_catalog."default",
+        senha_usuario character(255) COLLATE pg_catalog."default",
+        telefone_usuario character(14) COLLATE pg_catalog."default",
+        CONSTRAINT usuario_pkey PRIMARY KEY (email_usuario)
     );
 
-    ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_2
-        FOREIGN KEY (fk_Endereco_Num_Endereco)
-        REFERENCES Endereco (Num_Endereco)
-        ON DELETE SET NULL;
+    ALTER TABLE IF EXISTS public.associacao
+        ADD CONSTRAINT associacao_endereco_cod_endereco_fkey FOREIGN KEY (endereco_cod_endereco)
+        REFERENCES public.endereco (cod_endereco) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
 
-    ALTER TABLE Associacao ADD CONSTRAINT FK_Associacao_2
-        FOREIGN KEY (fk_Endereco_Num_Endereco)
-        REFERENCES Endereco (Num_Endereco)
-        ON DELETE CASCADE;
 
-    ALTER TABLE Retirada ADD CONSTRAINT FK_Retirada_2
-        FOREIGN KEY (fk_Endereco_Num_Endereco)
-        REFERENCES Endereco (Num_Endereco)
-        ON DELETE CASCADE;
+    ALTER TABLE IF EXISTS public.associacao
+        ADD CONSTRAINT associacao_endereco_cod_endereco_fkey1 FOREIGN KEY (endereco_cod_endereco)
+        REFERENCES public.endereco (cod_endereco) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
 
-    ALTER TABLE Retirada ADD CONSTRAINT FK_Retirada_3
-        FOREIGN KEY (fk_Usuario_Codigo_Usuario)
-        REFERENCES Usuario (Codigo_Usuario)
-        ON DELETE CASCADE;
 
-    ALTER TABLE Retirada ADD CONSTRAINT FK_Retirada_4
-        FOREIGN KEY (fk_Catador_Matricula_Catador)
-        REFERENCES Catador (Matricula_Catador)
-        ON DELETE CASCADE;
+    ALTER TABLE IF EXISTS public.catador
+        ADD CONSTRAINT catador_associacao_email_associacao_fkey FOREIGN KEY (associacao_email_associacao)
+        REFERENCES public.associacao (email_associacao) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
 
-    ALTER TABLE Retirada ADD CONSTRAINT FK_Retirada_5
-        FOREIGN KEY (fk_Associacao_Num_Registro_Associacao)
-        REFERENCES Associacao (Num_Registro_Associacao)
-        ON DELETE CASCADE;
 
-    ALTER TABLE Compoe ADD CONSTRAINT FK_Compoe_1
-        FOREIGN KEY (fk_Catador_Matricula_Catador)
-        REFERENCES Catador (Matricula_Catador)
-        ON DELETE RESTRICT;
+    ALTER TABLE IF EXISTS public.catador
+        ADD CONSTRAINT catador_associacao_email_associacao_fkey1 FOREIGN KEY (associacao_email_associacao)
+        REFERENCES public.associacao (email_associacao) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
 
-    ALTER TABLE Compoe ADD CONSTRAINT FK_Compoe_2
-        FOREIGN KEY (fk_Associacao_Num_Registro_Associacao)
-        REFERENCES Associacao (Num_Registro_Associacao)
-        ON DELETE SET NULL;
+
+    ALTER TABLE IF EXISTS public.realiza_retirada
+        ADD CONSTRAINT realiza_retirada_catador_cod_catador_fkey FOREIGN KEY (catador_cod_catador)
+        REFERENCES public.catador (cod_catador) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
+
+
+    ALTER TABLE IF EXISTS public.realiza_retirada
+        ADD CONSTRAINT realiza_retirada_catador_cod_catador_fkey1 FOREIGN KEY (catador_cod_catador)
+        REFERENCES public.catador (cod_catador) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
+
+
+    ALTER TABLE IF EXISTS public.realiza_retirada
+        ADD CONSTRAINT realiza_retirada_retirada_cod_solicitacao_fkey FOREIGN KEY (retirada_cod_solicitacao)
+        REFERENCES public.retirada (cod_solicitacao) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
+
+
+    ALTER TABLE IF EXISTS public.realiza_retirada
+        ADD CONSTRAINT realiza_retirada_retirada_cod_solicitacao_fkey1 FOREIGN KEY (retirada_cod_solicitacao)
+        REFERENCES public.retirada (cod_solicitacao) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
+
+
+    ALTER TABLE IF EXISTS public.retirada
+        ADD CONSTRAINT retirada_endereco_cod_endereco_fkey FOREIGN KEY (endereco_cod_endereco)
+        REFERENCES public.endereco (cod_endereco) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
+
+
+    ALTER TABLE IF EXISTS public.retirada
+        ADD CONSTRAINT retirada_endereco_cod_endereco_fkey1 FOREIGN KEY (endereco_cod_endereco)
+        REFERENCES public.endereco (cod_endereco) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
+
+
+    ALTER TABLE IF EXISTS public.retirada
+        ADD CONSTRAINT retirada_usuario_email_usuario_fkey FOREIGN KEY (usuario_email_usuario)
+        REFERENCES public.usuario (email_usuario) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
+
+
+    ALTER TABLE IF EXISTS public.retirada
+        ADD CONSTRAINT retirada_usuario_email_usuario_fkey1 FOREIGN KEY (usuario_email_usuario)
+        REFERENCES public.usuario (email_usuario) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID;
+
+    END;
         
        
 ### 9	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
