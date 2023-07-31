@@ -1,5 +1,5 @@
 # TRABALHO DE PI: Select
-Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
+Trabalho desenvolvido durante o último ano, envolvendo as disciplinas de Modelagem de Dados, Programação Web, Dispositivos Móveis e Projeto Integrador.
 
 # Sumário
 
